@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Labb1+2 Chat-Login</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+    <body>
+    
+    <div id="login_div" class="main-div">
+        <h3> Firebase web login</h3>
+        <input type="email" placeholder="Email..."id="email_field"/>
+        <input type ="password" placeholder="Password..." id="password_field"/>
+        
+        <button onclick="login()">Login to account</button>
+        </div>
+        
+        
+        <div id="user_div" class="loggedin-div">
+        <h3>Welcome!</h3>
+            <p id="userPara">Välkommen till inloggningen. </p>
+            <button onclick="logout()">Logout</button>
+        
+        </div> 
+    
+    </body>
+    
+    
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDDa3vLJVPU5Ai2ab_WpxRo2a5sEu4s9uM",
+    authDomain: "jslabb1-2.firebaseapp.com",
+    databaseURL: "https://jslabb1-2.firebaseio.com",
+    projectId: "jslabb1-2",
+    storageBucket: "jslabb1-2.appspot.com",
+    messagingSenderId: "940057871031"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="JS/labb12.js"></script>
+
+</html>
